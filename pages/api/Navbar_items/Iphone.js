@@ -1,6 +1,6 @@
 export default function Iphone(){
     return(<>
-<div className="flex flex-col md:flex-row bg-black text-white py-16">
+<div className="flex flex-col md:flex-row bg-black text-white py-16 justify-center">
         <div className="ml-12 mt-4">
         <h1 className="text-slate-300">Explore iPhone</h1>
             <h1 className="text-xl">Explore All iPhone</h1>

@@ -1,6 +1,6 @@
 export default function Store(){
     return(<>
-        <div className="flex flex-col md:flex-row bg-black text-white pt-16 pb-32">
+        <div className="flex flex-col md:flex-row bg-black text-white pt-16 pb-32 justify-center">
         <div className="ml-12 mt-4">
         <h1 className="text-slate-300">Shop</h1>
             <h1 className="text-xl">Shop the latest</h1>

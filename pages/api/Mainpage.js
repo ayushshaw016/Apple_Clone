@@ -1,3 +1,6 @@
+
+// This is the page will be rendered after clicking the apple logo
+
 import titanium_iphone from "../../public/Assets/images/explore1.jpg"
 import blue_iphone from "../../public/Assets/images/explore2.jpg"
 import blue_iphone_img from "../../public/Assets/images/blue_iphone.jpg"
@@ -13,7 +16,7 @@ import Image from "next/image"
 export default  function MainPage(){
     return (
         <>
-            <div className="bg-black pb-8">
+            <div className="bg-black pb-8 ">
                 <p className="bg-slate-800 text-white p-3 text-center">
                 Get up to 24 months No Cost EMI on all iPhone models from most leading banks.‡ <span className="text-blue-600 hover:underline hover:cursor-pointer">Shop now</span>
                 </p>
@@ -25,7 +28,7 @@ export default  function MainPage(){
                         <span className="border border-blue-700 hover:bg-blue-700 px-4 py-2 text-2xl rounded-3xl ml-3 hover:cursor-pointer">Buy</span>
                     </div>
                     
-                  <Image src={titanium_iphone} alt="error" className="text-white w-72 h-auto -rotate-90 mx-auto mt-20 "/>
+                  <Image src={titanium_iphone} alt="error" className="text-white w-96 h-auto -rotate-90 mx-auto mt-20 transform transition duration-500 ease-in-out hover:rotate-180 rounded-3xl" data-aos = "fade-up"/>
                     </div>
             </div>
             <div className="bg-slate-100 py-16 mb-6">
@@ -36,7 +39,7 @@ export default  function MainPage(){
                         <span className="border border-blue-700 text-blue-700 hover:text-white hover:bg-blue-700 px-4 py-2 text-2xl rounded-3xl ml-3 hover:cursor-poiner ">Buy</span>
                     </div>
                     <div className="bg-black h-96">
-                 <Image src={blue_iphone_img} className="w-80 h-full bg-cover mx-auto rounded-3xl mt-8 pb-16 -rotate-90"/>   
+                 <Image src={blue_iphone_img} className="w-96 h-full bg-cover mx-auto rounded-3xl mt-8 pb-16 -rotate-90 "/>   
                     </div>
             </div>
 
@@ -61,7 +64,7 @@ export default  function MainPage(){
                         <span className="border border-blue-700 text-blue-700 hover:text-white hover:bg-blue-700 px-4 py-2  rounded-3xl ml-3 hover:cursor-poiner ">Buy</span>
                     </div>
                     <div className="">
-                 <Image src={watches} className="w-3/5 h-full mx-auto rounded-3xl pb-6 mt-4"/>   
+                 <Image src={watches} className="w-3/5 h-full mx-auto rounded-3xl pb-6 mt-4" data-aos="fade-up" data-aos-delay="700"/>   
                     </div>
                 </div>
                 <div className="md:w-1/2 bg-slate-100 mr-3 rounded-xl">
