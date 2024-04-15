@@ -1,17 +1,18 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Navbar from './api/Navbar'
-import MainPage from './api/Mainpage'
+import Navbar from './Component/Navbar'
+import MainPage from './Mainpage'
 
 import { useState } from 'react'
-import Footer from './api/Footer/Footer'
-import Homepage from './api/Homepage'
+import Footer from './Component/Footer/Footer'
+import Homepage from './Homepage'
+import Learnmore from './Learnmore'
 export default function Home() {
   return (
     <>
     <Navbar />
-    {/* <MainPage/> */}
+    {/* <Learnmore/> */}
     <Homepage/>
     <Footer/>
     </>

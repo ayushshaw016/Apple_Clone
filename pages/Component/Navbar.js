@@ -11,7 +11,9 @@ import TVandHome from "./Navbar_items/tvandhome";
 import Entertainment from "./Navbar_items/Entertainment";
 import Accessories from "./Navbar_items/Accessories";
 import Support from "./Navbar_items/Support";
-import MainPage from "./Mainpage";
+import MainPage from "../Mainpage";
+import Link from "next/link";
+import cart from "../../public/Assets/images/cartbag.jpg"
 export default function Navbar(){
   const [store, setstore] = useState(false);
   const [mac, setmac] = useState(false);
@@ -23,13 +25,13 @@ export default function Navbar(){
   const [entertainment, setentertainment] = useState(false);
   const [accesories, setaccessories] = useState(false);
   const [support, setsupport] = useState(false);
-  const [main, setmain] = useState(false)
 
     return (
         <>
            <nav className=" bg-[#464444] text-gray-400 hover:bg-black">
-    <ul className="flex flex-col lg:flex-row ml-36">
-        <li className="m-3 cursor-pointer mt-4" onClick={()=>setmain(!main)}>
+    <ul className="flex flex-col lg:flex-row ml-36 justify-evenly">
+    <Link href="/Home">
+        <li className="m-3 cursor-pointer mt-4" >
         <svg
           width="14"
           height="18"
@@ -44,6 +46,7 @@ export default function Navbar(){
           />
         </svg>  
         </li>
+        </Link>
         <li className="m-3 cursor-pointer" onMouseEnter={()=>{setstore(true)}} onMouseLeave={()=>{setstore(false)}}  data-aos="fade-dowm">Store</li>
         <li className="m-3 cursor-pointer" onMouseEnter={()=>{setmac(true)}} onMouseLeave={()=>{setmac(false)}}>Mac</li>
         <li className="m-3 cursor-pointer" onMouseEnter={()=>{setipad(true)}} onMouseLeave={()=>{setipad(false)}}>iPad</li>
@@ -55,41 +58,7 @@ export default function Navbar(){
         <li className="m-3 cursor-pointer" onMouseEnter={()=>{setaccessories(true)}} onMouseLeave={()=>{setaccessories(false)}}>Accessories</li>
         <li className="m-3 cursor-pointer" onMouseEnter={()=>setsupport(true)} onMouseLeave={()=>{setsupport(false)}}>Support</li>
         <li className="m-3 cursor-pointer">
-        <svg
-          className="cursor-pointer mt-2"
-          width="12"
-          height="12"
-          viewBox="0 0 12 12"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M11.8063 10.8713L8.50685 7.57204C9.10449 6.78005 9.46342 5.79795 9.46342 4.73146C9.46342 2.12276 7.3414 0 4.73171 0C2.12288 0 0 2.12276 0 4.73146C0 7.34101 2.12288 9.46292 4.73171 9.46292C5.79826 9.46292 6.78041 9.10401 7.57244 8.50639L10.8718 11.8056C11.0006 11.9344 11.1702 12 11.3391 12C11.5079 12 11.6767 11.9352 11.8063 11.8056C12.0646 11.5473 12.0646 11.1296 11.8063 10.8713ZM0.937816 4.73146C0.937816 2.63939 2.64038 0.937767 4.73171 0.937767C6.82389 0.937767 8.5256 2.64024 8.5256 4.73146C8.5256 6.82268 6.82389 8.52515 4.73171 8.52515C2.63953 8.52515 0.937816 6.82353 0.937816 4.73146Z"
-            fill="white"
-            fillOpacity="0.8"
-          />
-        </svg>
-        </li>
-        <li className="m-3 cursor-pointer">
-        <svg width="30px" height="30px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" className="bg-white">
-
-<title/>
-
-<g id="Cart">
-
-<path class="cls-1" d="M28.11,13.25l-2,9.75-.16.75A1.81,1.81,0,0,1,24.05,25H10V24s-1.55-1-1-1H22.71a1,1,0,0,0,1-.78L26.16,11.5h.09C27.42,11.5,28.31,12.33,28.11,13.25Z"/>
-
-<path d="M24.05,25.6H11.2a2.41,2.41,0,0,1-2.45-1.73L6,10.9H26.25a2.64,2.64,0,0,1,2.06.91,1.85,1.85,0,0,1,.39,1.57l-2.2,10.5A2.41,2.41,0,0,1,24.05,25.6ZM7.51,12.1,9.93,23.63a1.25,1.25,0,0,0,1.27.77H24.05a1.25,1.25,0,0,0,1.27-.77l2.2-10.51a.6.6,0,0,0-.14-.55,1.48,1.48,0,0,0-1.13-.47Z"/>
-
-<path d="M6.77,12.1a.6.6,0,0,1-.56-.39L5.42,9.6H3A.6.6,0,0,1,3,8.4H5.83a.59.59,0,0,1,.56.39l1,2.5a.6.6,0,0,1-.35.77A.57.57,0,0,1,6.77,12.1Z"/>
-
-<path d="M10.5,29.1a1.6,1.6,0,1,1,1.6-1.6A1.6,1.6,0,0,1,10.5,29.1Zm0-2a.4.4,0,1,0,.4.4A.4.4,0,0,0,10.5,27.1Z"/>
-
-<path d="M24.5,29.1a1.6,1.6,0,1,1,1.6-1.6,1.67,1.67,0,0,1-.22.81A1.61,1.61,0,0,1,24.5,29.1Zm0-2a.4.4,0,0,0-.4.4.41.41,0,0,0,0,.19.4.4,0,0,0,.69,0,.39.39,0,0,0,.06-.2A.4.4,0,0,0,24.5,27.1Z"/>
-
-</g>
-
-</svg>
+<Image src={cart} className="w-1/6 h-auto"/>
         </li>
     </ul>
 </nav>
@@ -104,7 +73,6 @@ export default function Navbar(){
 {entertainment && <Entertainment/>}
 {accesories && <Accessories/>}
 {support && <Support/>}
-{main && <MainPage/>}
         </>
     )
 

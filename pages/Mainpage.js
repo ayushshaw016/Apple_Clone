@@ -1,25 +1,26 @@
-
-// This is the page will be rendered after clicking the apple logo
-
-import titanium_iphone from "../../public/Assets/images/explore1.jpg"
-import blue_iphone from "../../public/Assets/images/explore2.jpg"
-import blue_iphone_img from "../../public/Assets/images/blue_iphone.jpg"
-import mackbook from "../../public/Assets/images/mackbook.jpg"
-import watches from "../../public/Assets/images/watches.jpg"
-import ipad from "../../public/Assets/images/ipad.jpg"
-import airpods from "../../public/Assets/images/airpods.jpg"
-import mackbookpro from "../../public/Assets/images/mackbookpro.jpg"
-import homepodmini from "../../public/Assets/images/homepodmini.jpg"
-import tradein from "../../public/Assets/images/hero.jpg"
-
+import titanium_iphone from "../public/Assets/images/explore1.jpg"
+import blue_iphone from "../public/Assets/images/explore2.jpg"
+import blue_iphone_img from "../public/Assets/images/blue_iphone.jpg"
+import mackbook from "../public/Assets/images/mackbook.jpg"
+import watches from "../public/Assets/images/watches.jpg"
+import ipad from "../public/Assets/images/ipad.jpg"
+import airpods from "../public/Assets/images/airpods.jpg"
+import mackbookpro from "../public/Assets/images/mackbookpro.jpg"
+import homepodmini from "../public/Assets/images/homepodmini.jpg"
+import tradein from "../public/Assets/images/hero.jpg"
+import Link from "next/link"
 import Image from "next/image"
 export default  function MainPage(){
     return (
         <>
             <div className="bg-black pb-8 ">
-                <p className="bg-slate-800 text-white p-3 text-center">
-                Get up to 24 months No Cost EMI on all iPhone models from most leading banks.‡ <span className="text-blue-600 hover:underline hover:cursor-pointer">Shop now</span>
-                </p>
+            
+
+<p className="bg-slate-800 text-white p-3 text-center">
+            Get up to 24 months No Cost EMI on all iPhone models from most leading banks.‡ 
+            <Link href="/Learnmore"><span className="text-blue-600 hover:underline hover:cursor-pointer">Shop now</span></Link>
+            </p>
+
                 <div className="">
                     <h1 className="text-6xl text-center text-white pt-8 font-bold">iPhone 15 Pro</h1>
                     <h1 className="text-3xl text-center text-white pt-6 font-bold">Titanium.So strong.So light.So Pro</h1>
