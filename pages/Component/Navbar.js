@@ -31,7 +31,7 @@ export default function Navbar(){
            <nav className=" bg-[#464444] text-gray-400 hover:bg-black">
     <ul className="flex flex-col lg:flex-row ml-36 justify-evenly">
     <Link href="/Home">
-        <li className="m-3 cursor-pointer mt-4" >
+        <li className="m-3 cursor-pointer mt-4 hover:underline" >
         <svg
           width="14"
           height="18"
@@ -47,16 +47,16 @@ export default function Navbar(){
         </svg>  
         </li>
         </Link>
-        <li className="m-3 cursor-pointer" onMouseEnter={()=>{setstore(true)}} onMouseLeave={()=>{setstore(false)}}  data-aos="fade-dowm">Store</li>
-        <li className="m-3 cursor-pointer" onMouseEnter={()=>{setmac(true)}} onMouseLeave={()=>{setmac(false)}}>Mac</li>
-        <li className="m-3 cursor-pointer" onMouseEnter={()=>{setipad(true)}} onMouseLeave={()=>{setipad(false)}}>iPad</li>
-        <li className="m-3 cursor-pointer" onMouseEnter={()=>{setiphone(true)}} onMouseLeave={()=>{setiphone(false)}}>iPhone</li>
-        <li className="m-3 cursor-pointer" onMouseEnter={()=>{setwatch(true)}} onMouseLeave={()=>{setwatch(false)}}>Watch</li>
-        <li className="m-3 cursor-pointer" onMouseEnter={()=>{setairpods(true)}} onMouseLeave={()=>{setairpods(false)}}>Airpods</li>
-        <li className="m-3 cursor-pointer" onMouseEnter={()=>{settvandhome(true)}} onMouseLeave={()=>{settvandhome(false)}}>TV & Home</li>
-        <li className="m-3 cursor-pointer" onMouseEnter={()=>{setentertainment(true)}} onMouseLeave={()=>{setentertainment(false)}}>Entertainment</li>
-        <li className="m-3 cursor-pointer" onMouseEnter={()=>{setaccessories(true)}} onMouseLeave={()=>{setaccessories(false)}}>Accessories</li>
-        <li className="m-3 cursor-pointer" onMouseEnter={()=>setsupport(true)} onMouseLeave={()=>{setsupport(false)}}>Support</li>
+        <li className="m-3 cursor-pointer hover:text-white hover:underline" onMouseEnter={()=>{setstore(true)}} onMouseLeave={()=>{setstore(false)}}  data-aos="fade-dowm">Store</li>
+        <li className="m-3 cursor-pointer hover:text-white hover:underline" onMouseEnter={()=>{setmac(true)}} onMouseLeave={()=>{setmac(false)}}>Mac</li>
+        <li className="m-3 cursor-pointer hover:text-white hover:underline" onMouseEnter={()=>{setipad(true)}} onMouseLeave={()=>{setipad(false)}}>iPad</li>
+        <li className="m-3 cursor-pointer hover:text-white hover:underline" onMouseEnter={()=>{setiphone(true)}} onMouseLeave={()=>{setiphone(false)}}>iPhone</li>
+        <li className="m-3 cursor-pointer hover:text-white hover:underline" onMouseEnter={()=>{setwatch(true)}} onMouseLeave={()=>{setwatch(false)}}>Watch</li>
+        <li className="m-3 cursor-pointer hover:text-white hover:underline" onMouseEnter={()=>{setairpods(true)}} onMouseLeave={()=>{setairpods(false)}}>Airpods</li>
+        <li className="m-3 cursor-pointer hover:text-white hover:underline" onMouseEnter={()=>{settvandhome(true)}} onMouseLeave={()=>{settvandhome(false)}}>TV & Home</li>
+        <li className="m-3 cursor-pointer hover:text-white hover:underline" onMouseEnter={()=>{setentertainment(true)}} onMouseLeave={()=>{setentertainment(false)}}>Entertainment</li>
+        <li className="m-3 cursor-pointer hover:text-white hover:underline" onMouseEnter={()=>{setaccessories(true)}} onMouseLeave={()=>{setaccessories(false)}}>Accessories</li>
+        <li className="m-3 cursor-pointer hover:text-white hover:underline" onMouseEnter={()=>setsupport(true)} onMouseLeave={()=>{setsupport(false)}}>Support</li>
         <li className="m-3 cursor-pointer">
 <Image src={cart} className="w-1/6 h-auto"/>
         </li>

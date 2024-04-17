@@ -10,7 +10,100 @@ import homepodmini from "../public/Assets/images/homepodmini.jpg"
 import tradein from "../public/Assets/images/hero.jpg"
 import Link from "next/link"
 import Image from "next/image"
+import { Carousel_mainpage } from "./Carousel"
+import mac from "../public/Assets/images/mac.png"
 export default  function MainPage(){
+    const cards = [
+        {
+          title: 'IPHONE 15',
+          heading:'Newphoria',
+          description: 'From ₹3329.00/mo. for 24 mo. with No Cost EMI§ or ₹79900.00‡',
+          img:mac,
+          background:'white',
+        },
+        {
+          title: 'MACKBOOK AIR',
+          heading:'Designed to go places.',
+          description: 'From ₹99900.00‡',
+          img:mac,
+          background:'white',
+  
+        },
+        {
+          title: 'IPHONE 15 PRO',
+          heading:'Titanium',
+          description: 'From ₹5621.00/mo. for 24 mo. with No Cost EMI§ or ₹134900.00‡',
+          img:mac,
+          background:'black',
+          text:'white'
+        },
+        {
+          title: 'APPLE WATCH SERIES 9',
+          heading:'Smarter.BRighter.Mighter',
+          description: 'From ₹41900.00‡',
+          img:mac,
+          background:'black',
+          text:'white'
+  
+  
+        },
+        {
+          title: 'IPAD 3',
+          heading:'LOVEABLE.DRAWABLE.MAGICAL.',
+          description: 'From ₹39900.00‡',
+          img:mac,
+          background:'white',
+  
+  
+        },
+        {
+          title: 'MACKBOOK PRO',
+          heading:'MIND-blowing. Head-turning.',
+          description: 'From ₹169900.00‡',
+          img:mac,
+          background:'white',
+  
+  
+        },
+        {
+          title: 'APPLE WATCH ULTRA 2',
+          heading:'Next-level adventure.',
+          description: 'From ₹89900.00‡',
+          img:mac,
+          background:'white',
+  
+  
+        },
+        {
+          title: 'IPAD PRO',
+          heading:'SUPERCHARGED by M2',
+          description: 'From ₹81900.00‡',
+          img:mac,
+          background:'black',
+          text:'white'
+  
+  
+        },
+        {
+          title: 'APPLE WATCH SE',
+          heading:'A great deal to love.',
+          description: 'From ₹29900.00‡',
+          img:mac,
+          background:'white',
+  
+  
+        },
+        {
+          title: 'NEW',
+          heading:'Arm candy. In all-new flavours.',
+          description: 'Shop the latest strap styles and colours',
+          img:mac,
+          background:'white',
+  
+  
+        }
+        // Add more cards as needed
+      ];
     return (
         <>
             <div className="bg-black pb-8 ">
@@ -130,7 +223,23 @@ export default  function MainPage(){
                  <Image src={tradein} className="w-full h-auto mx-auto rounded-3xl"/>   
                     </div>
                 </div>
+
+
+                
             </div>
+
+            <div className="container mx-auto py-8 ">
+      <Carousel_mainpage cards={cards} />
+    </div>
+    {/* <div className="-pb-16  text-center ">
+        <span className="border border-solid border-black rounded-full ml-1 shadow-md">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span className="border border-solid border-black rounded-full ml-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span className="border border-solid border-black rounded-full ml-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span className="border border-solid border-black rounded-full ml-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span className="border border-solid border-black rounded-full ml-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span className="border border-solid border-black rounded-full ml-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span className="border border-solid border-black rounded-full ml-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    </div> */}
         </>
     )
 }

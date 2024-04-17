@@ -40,17 +40,17 @@ export default function Learnmore(){
              <p className="mt-8">iPhone 13: From ₹2496.00/mo.</p>
              <p className="mt-8">iPhone SE: From ₹2079.00/mo.</p>
 
-             <p className="text-blue-600 hover:underline mt-6">Shop iPhone &gt;</p>
+             <p className="text-blue-600 hover:underline mt-6 hover:cursor-pointer">Shop iPhone &gt;</p>
              <p className="mt-6">Trade in your smartphone online or in-store for instant credit towards your new iPhone and lower your monthly instalment.*</p>
              <p className="mt-6">Speak to a specialist online or in-store about available options.</p>
              <p className="mt-6">Check your bank card’s eligibility and calculate your monthly instalment options.</p>
 
-             <p className="text-blue-600 hover:underline mt-6">Learn More &gt;</p>
+             <p className="text-blue-600 hover:underline mt-6 hover:cursor-pointer">Learn More &gt;</p>
 
              <div className="lg:mx-96 pb-16 mt-4">
                 <Image src={student} className="w-1/6 h-auto rounded-full ml-12"/>
                 <p className="text-sm mt-2">We are here to help</p>
-                <p className="text-sm text-blue-600 hover:underline mt-2">Chap with a Specialist</p>
+                <p className="text-sm text-blue-600 hover:underline mt-2 hover:cursor-pointer">Chap with a Specialist</p>
              </div>
 
             </div>
