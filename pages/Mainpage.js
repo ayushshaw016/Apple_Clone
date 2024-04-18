@@ -4,6 +4,7 @@ import blue_iphone_img from "../public/Assets/images/blue_iphone.jpg"
 import mackbook from "../public/Assets/images/mackbook.jpg"
 import watches from "../public/Assets/images/watches.jpg"
 import ipad from "../public/Assets/images/ipad.jpg"
+import iphoneedit from "../public/Assets/images/iphoneedited.png"
 import airpods from "../public/Assets/images/airpods.jpg"
 import mackbookpro from "../public/Assets/images/mackbookpro.jpg"
 import homepodmini from "../public/Assets/images/homepodmini.jpg"
@@ -11,22 +12,23 @@ import tradein from "../public/Assets/images/hero.jpg"
 import Link from "next/link"
 import Image from "next/image"
 import { Carousel_mainpage } from "./Carousel"
+import frame from "../public/Assets/images/frame.png"
 import mac from "../public/Assets/images/mac.png"
 export default  function MainPage(){
-    const cards = [
+    const cards_mainpage = [
         {
           title: 'IPHONE 15',
           heading:'Newphoria',
           description: 'From ₹3329.00/mo. for 24 mo. with No Cost EMI§ or ₹79900.00‡',
           img:mac,
-          background:'white',
+          img1:frame
         },
         {
           title: 'MACKBOOK AIR',
           heading:'Designed to go places.',
           description: 'From ₹99900.00‡',
           img:mac,
-          background:'white',
+          img1:frame
   
         },
         {
@@ -34,34 +36,29 @@ export default  function MainPage(){
           heading:'Titanium',
           description: 'From ₹5621.00/mo. for 24 mo. with No Cost EMI§ or ₹134900.00‡',
           img:mac,
-          background:'black',
-          text:'white'
+          img1:frame
+          
         },
         {
           title: 'APPLE WATCH SERIES 9',
           heading:'Smarter.BRighter.Mighter',
           description: 'From ₹41900.00‡',
           img:mac,
-          background:'black',
-          text:'white'
-  
-  
+          img1:frame
         },
         {
           title: 'IPAD 3',
           heading:'LOVEABLE.DRAWABLE.MAGICAL.',
           description: 'From ₹39900.00‡',
-          img:mac,
-          background:'white',
-  
-  
+         img:mac,
+         img1:frame
         },
         {
           title: 'MACKBOOK PRO',
           heading:'MIND-blowing. Head-turning.',
           description: 'From ₹169900.00‡',
           img:mac,
-          background:'white',
+          img1:frame
   
   
         },
@@ -70,7 +67,7 @@ export default  function MainPage(){
           heading:'Next-level adventure.',
           description: 'From ₹89900.00‡',
           img:mac,
-          background:'white',
+          img1:frame
   
   
         },
@@ -78,29 +75,22 @@ export default  function MainPage(){
           title: 'IPAD PRO',
           heading:'SUPERCHARGED by M2',
           description: 'From ₹81900.00‡',
-          img:mac,
-          background:'black',
-          text:'white'
-  
-  
+        img:mac,
+        img1:frame  
         },
         {
           title: 'APPLE WATCH SE',
           heading:'A great deal to love.',
           description: 'From ₹29900.00‡',
           img:mac,
-          background:'white',
-  
-  
+          img1:frame
         },
         {
           title: 'NEW',
           heading:'Arm candy. In all-new flavours.',
           description: 'Shop the latest strap styles and colours',
           img:mac,
-          background:'white',
-  
-  
+           img1:frame
         }
         // Add more cards as needed
       ];
@@ -132,8 +122,8 @@ export default  function MainPage(){
                         <span className="border border-black border-xl text-white rounded-3xl text-2xl bg-blue-800 py-2 px-4 hover:cursor-pointer hover:bg-blue-700">Learn More</span>
                         <span className="border border-blue-700 text-blue-700 hover:text-white hover:bg-blue-700 px-4 py-2 text-2xl rounded-3xl ml-3 hover:cursor-poiner ">Buy</span>
                     </div>
-                    <div className="bg-black h-96">
-                 <Image src={blue_iphone_img} className="w-96 h-full bg-cover mx-auto rounded-3xl mt-8 pb-16 -rotate-90 "/>   
+                    <div className="mt-4 bg-slate-100">
+                 <Image src={iphoneedit} className="w-full  h-96 bg-cover rounded-3xl pb-16 "/>   
                     </div>
             </div>
 
@@ -229,17 +219,10 @@ export default  function MainPage(){
             </div>
 
             <div className="container mx-auto py-8 ">
-      <Carousel_mainpage cards={cards} />
+      <Carousel_mainpage cards={cards_mainpage} />
     </div>
-    {/* <div className="-pb-16  text-center ">
-        <span className="border border-solid border-black rounded-full ml-1 shadow-md">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        <span className="border border-solid border-black rounded-full ml-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        <span className="border border-solid border-black rounded-full ml-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        <span className="border border-solid border-black rounded-full ml-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        <span className="border border-solid border-black rounded-full ml-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        <span className="border border-solid border-black rounded-full ml-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        <span className="border border-solid border-black rounded-full ml-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-    </div> */}
+
+    
         </>
     )
 }

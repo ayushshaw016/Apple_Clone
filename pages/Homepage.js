@@ -3,9 +3,13 @@
 
 import Image from "next/image"
 import mac from "../public/Assets/images/mac.png"
+import macbook from "../public/Assets/images/mackbook.jpg"
 import iphone from "../public/Assets/images/iphone.png"
+import iphone1 from "../public/Assets/images/iphone1.png"
 import ipad from "../public/Assets/images/ipad.png"
+import ipad1 from "../public/Assets/images/ipad2.jpg"
 import applewatch from "../public/Assets/images/applewatch.png"
+import applewatch1 from "../public/Assets/images/applewatch1.png"
 import airpods from "../public/Assets/images/airpods.png"
 import Airtag from "../public/Assets/images/Airtag.png"
 import Appletv from "../public/Assets/images/Appletv.png"
@@ -13,13 +17,24 @@ import homepod from "../public/Assets/images/Homepod.png"
 import student from "../public/Assets/images/student_icon.png"
 import location from "../public/Assets/images/location.png"
 import Link from "next/link"
-import {Carousel, Carousel_second,Carousel_third} from "./Carousel"
+import {Carousel, Carousel_second,Carousel_third,Carousel_fourth,Carousel_fifth} from "./Carousel"
+
+import titanium_iphone_edit from "../public/Assets/images/explore1edited.jpg"
+import mackbookpro from "../public/Assets/images/mackbookpro.png"
+import applewtch2 from "../public/Assets/images/applewatchultra2.jpg"
+import ipadpro from "../public/Assets/images/ipadpro.jpg"
+import watchse from "../public/Assets/images/watchse.jpg"
+import newimg from "../public/Assets/images/new.jpg"
+import iphoneedit from "../public/Assets/images/iphoneedited.png"
+import {img1, img2,img3,img4,img5} from "../public/Assets/Carousel_sec_img/index.js"
+import {img_1,img_2,img_3,img_4,img_5,img_6,img_7,img_8} from "../public/Assets/Carousel_fourth_img/index.js"
+import {imgg1,imgg2,imgg3,imgg4,imgg5,imgg6,imgg8,imgg9} from "../public/Assets/Carousel_fifth_img/index.js"
 export default function Homepage(){
     const appleitems = [
         { img:mac,val :"Mac"},
-        { img:iphone,val :"iPhone"},
+        { img:iphone1,val :"iPhone"},
         { img:ipad,val :"iPad"},
-        { img:applewatch,val :"Apple Watch"},
+        { img:applewatch1,val :"Apple Watch"},
         { img:airpods,val :"Airpods"},
         { img:Airtag,val :"Air Tag"},
         { img:Appletv,val :"Apple TV 4K"},
@@ -31,14 +46,14 @@ export default function Homepage(){
         title: 'IPHONE 15',
         heading:'Newphoria',
         description: 'From ₹3329.00/mo. for 24 mo. with No Cost EMI§ or ₹79900.00‡',
-        img:mac,
+        img:iphoneedit,
         background:'white',
       },
       {
         title: 'MACKBOOK AIR',
         heading:'Designed to go places.',
         description: 'From ₹99900.00‡',
-        img:mac,
+        img:macbook,
         background:'white',
 
       },
@@ -46,7 +61,7 @@ export default function Homepage(){
         title: 'IPHONE 15 PRO',
         heading:'Titanium',
         description: 'From ₹5621.00/mo. for 24 mo. with No Cost EMI§ or ₹134900.00‡',
-        img:mac,
+        img:titanium_iphone_edit,
         background:'black',
         text:'white'
       },
@@ -54,7 +69,7 @@ export default function Homepage(){
         title: 'APPLE WATCH SERIES 9',
         heading:'Smarter.BRighter.Mighter',
         description: 'From ₹41900.00‡',
-        img:mac,
+        img:applewatch,
         background:'black',
         text:'white'
 
@@ -64,7 +79,7 @@ export default function Homepage(){
         title: 'IPAD 3',
         heading:'LOVEABLE.DRAWABLE.MAGICAL.',
         description: 'From ₹39900.00‡',
-        img:mac,
+        img:ipad1,
         background:'white',
 
 
@@ -73,7 +88,7 @@ export default function Homepage(){
         title: 'MACKBOOK PRO',
         heading:'MIND-blowing. Head-turning.',
         description: 'From ₹169900.00‡',
-        img:mac,
+        img:mackbookpro,
         background:'white',
 
 
@@ -82,8 +97,8 @@ export default function Homepage(){
         title: 'APPLE WATCH ULTRA 2',
         heading:'Next-level adventure.',
         description: 'From ₹89900.00‡',
-        img:mac,
-        background:'white',
+        img:applewtch2,
+        background:'gray-100'
 
 
       },
@@ -91,7 +106,7 @@ export default function Homepage(){
         title: 'IPAD PRO',
         heading:'SUPERCHARGED by M2',
         description: 'From ₹81900.00‡',
-        img:mac,
+        img:ipadpro,
         background:'black',
         text:'white'
 
@@ -101,7 +116,7 @@ export default function Homepage(){
         title: 'APPLE WATCH SE',
         heading:'A great deal to love.',
         description: 'From ₹29900.00‡',
-        img:mac,
+        img:watchse,
         background:'white',
 
 
@@ -110,7 +125,7 @@ export default function Homepage(){
         title: 'NEW',
         heading:'Arm candy. In all-new flavours.',
         description: 'Shop the latest strap styles and colours',
-        img:mac,
+        img:newimg,
         background:'white',
 
 
@@ -122,14 +137,14 @@ export default function Homepage(){
           title: 'APPLE SPECIALIST',
           heading:'Shop one on one with a Specialist online.',
           description: '',
-          img:mac,
+          img:img1,
           background:'white',
         },
         {
           title: 'BUSINESS',
           heading:"From enterprise to small business, we'll work with you.",
           description: '',
-          img:mac,
+          img:img2,
           background:'black',
           text:'white'
         },
@@ -137,7 +152,7 @@ export default function Homepage(){
           title: 'TODAY AT APPLE',
           heading:'Join free session at your apple store.',
           description: 'Learn about the latest features and how to go further with your Apple devices.',
-          img:mac,
+          img:img3,
           background:'white',
 
         },
@@ -145,16 +160,16 @@ export default function Homepage(){
           title: '',
           heading:'Get help setting up your new device in a free Online Personal Session',
           description: '',
-          img:mac,
+          img:img4,
           background:'white',
   
   
         },
         {
-          title: 'ATCH AND LEARN',
+          title: 'WATCH AND LEARN',
           heading:'Need Support? Our Teams are here for you.',
           description: '',
-          img:mac,
+          img:img5,
           background:'white',
         }
     ]
@@ -206,6 +221,178 @@ export default function Homepage(){
           img:mac,
         }
     ]
+
+
+
+
+    const cards_fourth=[
+      {
+          title: 'In with the new.',
+          titleclr:'',
+          description: 'Discover fresh new colours for your favourite accessories',
+          desclr:'gray',
+          footerhead:' ',
+          footertitle:' ',
+          footertext:'Apple',
+          img:img_1,
+        },
+        {
+          title: '',
+          titleclr:'',
+          description: '',
+          desclr:'gray',
+          footerhead:'New',
+          footertitle:'iPhone 15 Silicone case with MagSafe-Light Blue',
+          footertext:'MRP ₹4900.00 (Incl. of all taxes)',
+          img:img_2,
+        },
+        {
+          title: '',
+          titleclr:'',
+          description: '',
+          desclr:'gray',
+          footerhead:' ',
+          footertitle:'IPhone FineWoven Wallet with Magsafe- Pacific Blue',
+          footertext:'MRP ₹5900.00 (Incl. of all taxes)',
+          img:img_3,
+        },
+        {
+          title: '',
+          titleclr:'',
+          description: '',
+          desclr:'gray',
+          footerhead:'New',
+          footertitle:'45mm Soft Mint Sport Loop',
+          footertext:'MRP ₹4500.00 (Incl. of all taxes)',
+          img:img_4,
+        },
+        {
+          title: '',
+          titleclr:'',
+          description: '',
+          desclr:'gray',
+          footerhead:'New',
+          footertitle:'45mm Soft Mint Sport Band - M/L',
+          footertext:'MRP ₹4500.00 (Incl. of all taxes)',
+          img:img_5,
+        },
+        {
+          title: '',
+          titleclr:'',
+          description: '',
+          desclr:'gray',
+          footerhead:'',
+          footertitle:'iPhone 15 Pro FineWoven Case with MagSafe - Evergreen',
+          footertext:'MRP ₹5900.00 (Incl. of all taxes)',
+          img:img_6,
+        },
+        {
+          title: '',
+          titleclr:'',
+          description: '',
+          desclr:'gray',
+          footerhead:'',
+          footertitle:'Airtag FineWoven Key Ring - Coral',
+          footertext:'MRP ₹3900.00 (Incl. of all taxes)',
+          img:img_7,
+        },
+        {
+          title: 'Explore All Accessories',
+          titleclr:'',
+          description: '',
+          desclr:'gray',
+          footerhead:'',
+          footertitle:'Airtag FineWoven Key Ring - Coral',
+          footertext:'MRP ₹3900.00 (Incl. of all taxes)',
+          img:img_8,
+        }
+
+    ]
+
+
+    const cards_fifth=[
+      {
+          title: 'Get 6 months of Apple Music free.',
+          titleclr:'',
+          description: 'Included with your HomePod, AirPods or selected Beats products.⁺',
+          desclr:'',
+          footerhead:' ',
+          footertitle:' ',
+          footertext:'Apple',
+          img:imgg1,
+        },
+        {
+          title: '',
+          titleclr:'',
+          description: '',
+          desclr:'gray',
+          footerhead:'Free Engraving',
+          footertitle:'AirPods Pro (2nd generation) with MagSafe cahrging Case..',
+          footertext:'MRP ₹2900.00 (Incl. of all taxes)',
+          img:imgg2,
+        },
+        {
+          title: '',
+          titleclr:'',
+          description: '',
+          desclr:'gray',
+          footerhead:'HomePod - Midnight',
+          footertitle:'',
+          footertext:'MRP ₹32900.00 (Incl. of all taxes)',
+          img:imgg3,
+        },
+        {
+          title: '',
+          titleclr:'',
+          description: '',
+          desclr:'gray',
+          footerhead:'HomePod mini - Yellow',
+          footertitle:'',
+          footertext:'MRP ₹10900.00 (Incl. of all taxes)',
+          img:imgg4,
+        },
+        {
+          title: '',
+          titleclr:'',
+          description: '',
+          desclr:'gray',
+          footerhead:'AirPods Max - Silver',
+          footertitle:'45mm Soft Mint Sport Band - M/L',
+          footertext:'MRP ₹59900.00 (Incl. of all taxes)',
+          img:imgg5,
+        },
+        {
+          title: '',
+          titleclr:'',
+          description: '',
+          desclr:'gray',
+          footerhead:'Free Engraving',
+          footertitle:'AirPods (3rd generation) with Lighting Charging Case',
+          footertext:'MRP ₹19900.00 (Incl. of all taxes)',
+          img:imgg6,
+        },
+        {
+          title: '',
+          titleclr:'',
+          description: '',
+          desclr:'gray',
+          footerhead:'',
+          footertitle:'Beats Studion Buds + True Wireless Noise Cancelling...',
+          footertext:'MRP ₹19900.00 (Incl. of all taxes)',
+          img:imgg8,
+        },
+        {
+          title: '',
+          titleclr:'',
+          description: '',
+          desclr:'gray',
+          footerhead:'',
+          footertitle:'beats Studio Buds True Wireless Noise cancelling...',
+          footertext:'MRP ₹16900.00 (Incl. of all taxes)',
+          img:imgg9,
+        }
+
+    ]
     return(<>
     <div className="bg-slate-100">
 
@@ -251,15 +438,8 @@ export default function Homepage(){
              </div>
         ))}
         </div>
-
-        <p className="text-4xl text-gray-500 mt-20"><span className="font-bold text-black">The latest.</span> Take a look at what’s new right now.</p>
         </div>
-        <p className="text-4xl font-bold ml-4 mt-4">Quick Links</p>
-        <div className="ml-4 mt-4">
-          <span className="mt-2 md:mt-0 block sm:inline px-4 py-2 mr-2 border border-solid border-gray-500 rounded-2xl hover:text-white hover:bg-gray-800 hover:cursor-pointer">Order Status</span>
-          <span className="mt-2 md:mt-0 block sm:inline px-4 py-2 mr-2 border border-solid border-gray-500 rounded-2xl hover:text-white hover:bg-gray-800 hover:cursor-pointer">Shopping Help</span>
-          <span className="mt-2 md:mt-0 block sm:inline px-4 py-2 mr-2 border border-solid border-gray-500 rounded-2xl hover:text-white hover:bg-gray-800 hover:cursor-pointer">Your Saves</span>
-        </div>
+        
 
 
         <div className="container mx-auto py-8">
@@ -272,13 +452,26 @@ export default function Homepage(){
       <Carousel_second cards={cards_second} />
     </div>
     <div className="container mx-auto py-8">
-      <h1 className="text-4xl"><span className="font-bold"> The Apple Store difference..</span><span className="text-gray-700"> Even more reasons to shop with us.</span></h1>
+      <h1 className="text-4xl"><span className="font-bold"> The Apple Store difference.</span><span className="text-gray-700"> Even more reasons to shop with us.</span></h1>
       <Carousel_third cards={cards_third} />
     </div>
-
+    <div className="container mx-auto py-8">
+      <h1 className="text-4xl"><span className="font-bold"> Accessories.</span><span className="text-gray-700">  Essentials that pair perfectly with your favourite devices.</span></h1>
+      <Carousel_fourth cards={cards_fourth} />
+    </div>
    
-      </div>
 
+    <div className="container mx-auto py-8">
+      <h1 className="text-4xl"><span className="font-bold"> Accessories.</span><span className="text-gray-700">  Essentials that pair perfectly with your favourite devices.</span></h1>
+      <Carousel_fifth cards={cards_fifth} />
+    </div>
+      </div>
+      <p className="text-4xl font-bold ml-4 mt-4">Quick Links</p>
+        <div className="ml-4 mt-4">
+          <span className="mt-2 md:mt-0 block sm:inline px-4 py-2 mr-2 border border-solid border-gray-500 rounded-2xl hover:text-white hover:bg-gray-800 hover:cursor-pointer">Order Status</span>
+          <span className="mt-2 md:mt-0 block sm:inline px-4 py-2 mr-2 border border-solid border-gray-500 rounded-2xl hover:text-white hover:bg-gray-800 hover:cursor-pointer">Shopping Help</span>
+          <span className="mt-2 md:mt-0 block sm:inline px-4 py-2 mr-2 border border-solid border-gray-500 rounded-2xl hover:text-white hover:bg-gray-800 hover:cursor-pointer">Your Saves</span>
+        </div>
     </div>
 
     
