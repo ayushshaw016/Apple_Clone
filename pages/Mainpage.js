@@ -4,7 +4,7 @@ import blue_iphone_img from "../public/Assets/images/blue_iphone.jpg"
 import mackbook from "../public/Assets/images/mackbook.jpg"
 import watches from "../public/Assets/images/watches.jpg"
 import ipad from "../public/Assets/images/ipad.jpg"
-import iphoneedit from "../public/Assets/images/iphoneedited.png"
+import iphoneedit from "../public/Assets/images/iphoneedited1.png"
 import airpods from "../public/Assets/images/airpods.jpg"
 import mackbookpro from "../public/Assets/images/mackbookpro.jpg"
 import homepodmini from "../public/Assets/images/homepodmini.jpg"
@@ -14,6 +14,9 @@ import Image from "next/image"
 import { Carousel_mainpage } from "./Carousel"
 import frame from "../public/Assets/images/frame.png"
 import mac from "../public/Assets/images/mac.png"
+
+// importing the video
+
 export default  function MainPage(){
     const cards_mainpage = [
         {
@@ -103,8 +106,10 @@ export default  function MainPage(){
             Get up to 24 months No Cost EMI on all iPhone models from most leading banks.‡ 
             <Link href="/Learnmore"><span className="text-blue-600 hover:underline hover:cursor-pointer">Shop now</span></Link>
             </p>
-
-                <div className="">
+      {/* <div>
+      <video controls width="100%" height="auto" src={iPhonemp4} type="video/mp4"/>
+    </div> */}
+              <div className="mx-auto pb-16">
                     <h1 className="text-6xl text-center text-white pt-8 font-bold">iPhone 15 Pro</h1>
                     <h1 className="text-3xl text-center text-white pt-6 font-bold">Titanium.So strong.So light.So Pro</h1>
                     <div className="text-center text-white mt-6">
@@ -113,7 +118,7 @@ export default  function MainPage(){
                     </div>
                     
                   <Image src={titanium_iphone} alt="error" className="text-white w-96 h-auto -rotate-90 mx-auto mt-20 transform transition duration-500 ease-in-out hover:rotate-180 rounded-3xl" data-aos = "fade-up"/>
-                    </div>
+              </div>
             </div>
             <div className="bg-slate-100 py-16 mb-6">
                 <h1 className="text-6xl font-bold text-center mt-16 font-sans">iPhone 15</h1>
@@ -123,7 +128,7 @@ export default  function MainPage(){
                         <span className="border border-blue-700 text-blue-700 hover:text-white hover:bg-blue-700 px-4 py-2 text-2xl rounded-3xl ml-3 hover:cursor-poiner ">Buy</span>
                     </div>
                     <div className="mt-4 bg-slate-100">
-                 <Image src={iphoneedit} className="w-full  h-96 bg-cover rounded-3xl pb-16 "/>   
+                 <Image src={iphoneedit} className="w-full  h-['40%'] bg-cover rounded-3xl pb-16 "/>   
                     </div>
             </div>
 
@@ -135,7 +140,7 @@ export default  function MainPage(){
                         <span className="border border-blue-700 text-blue-700 hover:text-white hover:bg-blue-700 px-4 py-2 text-2xl rounded-3xl ml-3 hover:cursor-poiner ">Buy</span>
                     </div>
                     <div className="">
-                 <Image src={mackbook} className="w-2/5 h-full mx-auto rounded-3xl pb-6 mt-4"/>   
+                 <Image src={mackbook} className="w-2/5 h-full mx-auto rounded-3xl mb-4 mt-4"/>   
                     </div>
             </div>
             <div className="flex flex-col md:flex-row mb-6 ">

@@ -1,6 +1,8 @@
+import Link from "next/link";
+
 export default function Accessories(){
     return(<>
-         <div className="flex flex-col md:flex-row bg-black text-white py-16 justify-center" data-aos="fade-down" data-aos-delay="900">
+         <div className="flex flex-col md:flex-row bg-black text-white py-16 justify-center z-40" data-aos="fade-down" data-aos-delay="900">
         <div className="ml-12 mt-4">
         <h1 className="text-slate-300">Shop Accessories</h1>
             <h1 className="text-xl ">Shop  All Accessories</h1>

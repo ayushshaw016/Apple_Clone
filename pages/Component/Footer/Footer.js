@@ -16,9 +16,9 @@ export default function Footer(){
          <p className="border-b-2 border-solid border-black ">&ensp;</p>
 
 
-         <div className="flex flex-col md:flex-row md:justify-evenly">
+         <div className="flex flex-col sm:flex-row sm:justify-between">
             <div>
-                <h1 className="text-black pt-3">Shop and Learn</h1>
+                <h1 className="text-black pt-3 font-bold">Shop and Learn</h1>
                 <p className="my-2 hover:underline hover:cursor-pointer">Store</p>
                 <p className="my-2 hover:underline hover:cursor-pointer">Mac</p>
                 <p className="my-2 hover:underline hover:cursor-pointer">iPad</p>
@@ -30,20 +30,20 @@ export default function Footer(){
                 <p className="my-2 hover:underline hover:cursor-pointer">Accessories</p>
                 <p className="my-2 hover:underline hover:cursor-pointer">Gift Card</p>
 
-                <h1 className="text-black pt-3">Apple Wallet</h1>
+                <h1 className="text-black pt-3 font-bold">Apple Wallet</h1>
                 <p className="my-2 hover:underline hover:cursor-pointer">Wallet</p>
 
             </div>
             <div>
 
-            <h1 className="text-black pt-3">Account</h1>
+            <h1 className="text-black pt-3 font-bold">Account</h1>
                 <p className="my-2 hover:underline hover:cursor-pointer">Manage your Apple Id</p>
                 <p className="my-2 hover:underline hover:cursor-pointer">Apple Store Account</p>
                 <p className="my-2 hover:underline hover:cursor-pointer">iCloud.com</p>
               
                 
 
-                <h1 className="text-black pt-3">Entertainment</h1>
+                <h1 className="text-black pt-3 font-bold">Entertainment</h1>
                 <p className="my-2 hover:underline hover:cursor-pointer">Apple One</p>
                 <p className="my-2 hover:underline hover:cursor-pointer">Aplle TV+</p>
                 <p className="my-2 hover:underline hover:cursor-pointer">Apple Music</p>
@@ -53,7 +53,7 @@ export default function Footer(){
                 <p className="my-2 hover:underline hover:cursor-pointer">App Store</p>
             </div>
             <div>
-            <h1 className="text-black pt-3">Apple Store</h1>
+            <h1 className="text-black pt-3 font-bold">Apple Store</h1>
                 <p className="my-2 hover:underline hover:cursor-pointer">Find a Store</p>
                 <p className="my-2 hover:underline hover:cursor-pointer">Genius Bar</p>
                 <p className="my-2 hover:underline hover:cursor-pointer">Today at Apple</p>
@@ -65,29 +65,29 @@ export default function Footer(){
                 <p className="my-2 hover:underline hover:cursor-pointer">Shopping Help</p>
             </div>
             <div>
-                <h1 className="text-black pt-3">For Bussiness</h1>
+                <h1 className="text-black pt-3 font-bold">For Bussiness</h1>
                 <p className="my-2 hover:underline hover:cursor-pointer">Apple and Bussiness</p>
                 <p className="my-2 hover:underline hover:cursor-pointer">Shop for Bussiness</p>
 
-                <h1 className="text-black pt-3">For Education</h1>
+                <h1 className="text-black pt-3 font-bold">For Education</h1>
                 <p className="my-2 hover:underline hover:cursor-pointer">Apple and Education</p>
                 <p className="my-2 hover:underline hover:cursor-pointer">Shop for Education</p>
                 <p className="my-2 hover:underline hover:cursor-pointer">Shop for University</p>
 
-                <h1 className="text-black pt-3">For HealthCare</h1>
+                <h1 className="text-black pt-3 font-bold">For HealthCare</h1>
                 <p className="my-2 hover:underline hover:cursor-pointer">Apple in HealthCare</p>
                 <p className="my-2 hover:underline hover:cursor-pointer">Health on APple Watch</p>
 
             </div>
             <div>
-            <h1 className="text-black pt-3">Apple Values</h1>
+            <h1 className="text-black pt-3 font-bold">Apple Values</h1>
                 <p className="my-2 hover:underline hover:cursor-pointer">Accessibility</p>
                 <p className="my-2 hover:underline hover:cursor-pointer">Education</p>
                 <p className="my-2 hover:underline hover:cursor-pointer">Environment</p>
                 <p className="my-2 hover:underline hover:cursor-pointer">Privacy</p>
                 <p className="my-2 hover:underline hover:cursor-pointer">Supplier Responsibilities</p>
 
-                <h1 className="text-black pt-3">About Apple</h1>
+                <h1 className="text-black pt-3 font-bold">About Apple</h1>
                 <p className="my-2 hover:underline hover:cursor-pointer">Newsroom</p>
                 <p className="my-2 hover:underline hover:cursor-pointer">Apple Leadership</p>
                 <p className="my-2 hover:underline hover:cursor-pointer">Career Opportunities</p>

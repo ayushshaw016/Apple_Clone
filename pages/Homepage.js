@@ -17,7 +17,7 @@ import homepod from "../public/Assets/images/Homepod.png"
 import student from "../public/Assets/images/student_icon.png"
 import location from "../public/Assets/images/location.png"
 import Link from "next/link"
-import {Carousel, Carousel_second,Carousel_third,Carousel_fourth,Carousel_fifth} from "./Carousel"
+import {Carousel, Carousel_second,Carousel_third,Carousel_fourth,Carousel_fifth,Carousel_sixth,Carousel_seventh} from "./Carousel"
 
 import titanium_iphone_edit from "../public/Assets/images/explore1edited.jpg"
 import mackbookpro from "../public/Assets/images/mackbookpro.png"
@@ -29,6 +29,10 @@ import iphoneedit from "../public/Assets/images/iphoneedited.png"
 import {img1, img2,img3,img4,img5} from "../public/Assets/Carousel_sec_img/index.js"
 import {img_1,img_2,img_3,img_4,img_5,img_6,img_7,img_8} from "../public/Assets/Carousel_fourth_img/index.js"
 import {imgg1,imgg2,imgg3,imgg4,imgg5,imgg6,imgg8,imgg9} from "../public/Assets/Carousel_fifth_img/index.js"
+import  {image1, image2,image3,image4} from "../public/Assets/Carousel_sixth_img/index.js"
+import lastcarousel from "../public/Assets/images/lastcarousel.jpg"
+import {Img1,Img2,Img3,Img4,Img5} from "../public/Assets/Carousel_third_img/index.js"
+
 export default function Homepage(){
     const appleitems = [
         { img:mac,val :"Mac"},
@@ -173,58 +177,57 @@ export default function Homepage(){
           background:'white',
         }
     ]
-
-
-
-
-
     const cards_third=[
       {
           title: 'Excahnge your Smartphone',
-          titleclr:'blue',
+          titleclr:'blue-500',
           description: 'Get ₹15000.00 - ₹62300.00 in credit towards a new one',
-          desclr:'gray',
+          desclr:'gray-300',
           
-          img:mac,
+          img:Img1,
         },
         {
           title: 'Customize your mac',
-          titleclr:'gray',
+          titleclr:'gray-300',
           description: '',
-          desclr:'gray',
+          desclr:'gray-300',
 
-          img:mac,
+          img:Img2,
         },
         {
           title: 'Make them yours.',
-          titleclr:'gray',
+          titleclr:'gray-300',
           description: 'Engrave a mix of emoji names and numbers for free.',
-          desclr:'purple',
-          img:mac,
+          desclr:'purple-500',
+          img:Img3,
 
         },
         {
           title: 'Flexiblw ways to pay.',
-          titleclr:'green',
+          titleclr:'green-300',
           description: 'plus No Cost EMI.',
-          desclr:'gray',
-          img:mac,
+          desclr:'gray-300',
+          img:Img4,
   
   
         },
         {
           title: 'Enjoy free delivery or easy pickup',
-          titleclr:'green',
+          titleclr:'green-500',
           description: 'From an Apple store',
-          desclr:'gray',
+          desclr:'gray-300',
 
-          img:mac,
+          img:Img5,
+        },
+        {
+          title: 'Trade in your eligible Mac, Apple watch iPad for instant credit.*',
+          titleclr:'purple-500',
+          description: 'In store only',
+          desclr:'gray-300',
+
+          img:Img1,
         }
     ]
-
-
-
-
     const cards_fourth=[
       {
           title: 'In with the new.',
@@ -309,7 +312,6 @@ export default function Homepage(){
 
     ]
 
-
     const cards_fifth=[
       {
           title: 'Get 6 months of Apple Music free.',
@@ -393,6 +395,42 @@ export default function Homepage(){
         }
 
     ]
+
+    const cards_sixth = [
+      {
+        title: 'APPLE TV+',
+        heading:'Get 3 months of Apple TV+ free when you buy an apple device.',
+        description: '',
+        img:image1,
+      },
+      {
+        title: '',
+        heading:'FOur Apple services. One easy subscription.',
+        description: '',
+        img:image2,
+
+      },{
+        title: '',
+        heading:'We  have got you covered.',
+        description: 'AppleCare+ now comes with unlimited repairs for accidental damage protection.',
+        img:image3,
+      },{
+        title: 'Home',
+        heading:'See how one app ca control your entire home.',
+        description: '',
+        img:image4,
+      },
+      // Add more cards as needed
+    ];
+
+
+    const cards_seventh =[
+      {
+        title:'EDUCATION',
+        heading:'Save on a new MAc wioth education pricing.',
+        img:lastcarousel
+      }
+    ]
     return(<>
     <div className="bg-slate-100">
 
@@ -421,7 +459,7 @@ export default function Homepage(){
 
                 <div className="mb-6 mr-6">
                 <p className="font-bold">Visit an Apple Store</p>
-                <Link className="text-blue-400 hover:underline hover:cursor-pointer" href="https://www.google.com/maps/search/apple+store/@25.8440554,84.8903104,10z/data=!3m1!4b1?entry=ttu" target="_blank">Find one near you &gt;</Link>
+                <Link className="text-blue-400 hover:underline hover:cursor-pointer" href="https://www.google.com/maps/@21.0680074,82.7525294,5z?authuser=0&entry=ttu" target="_blank">Find one near you &gt;</Link>
                 </div>
         </div>
       </div>
@@ -443,35 +481,49 @@ export default function Homepage(){
 
 
         <div className="container mx-auto py-8">
-      <h1 className="text-4xl"><span className="font-bold">The Latest.</span><span className="text-gray-700">Take a look at what’s new right now.</span></h1>
+      <h1 className="text-3xl ml-4 my-2"><span className="font-bold">The Latest.</span><span className="text-gray-700">Take a look at what’s new right now.</span></h1>
       <Carousel cards={cards} />
     </div>
 
     <div className="container mx-auto py-8">
-      <h1 className="text-4xl"><span className="font-bold">Help is Here.</span><span className="text-gray-700">Whenever and however you need it.</span></h1>
+      <h1 className="text-3xl ml-4 my-2"><span className="font-bold">Help is Here.</span><span className="text-gray-700">Whenever and however you need it.</span></h1>
       <Carousel_second cards={cards_second} />
     </div>
     <div className="container mx-auto py-8">
-      <h1 className="text-4xl"><span className="font-bold"> The Apple Store difference.</span><span className="text-gray-700"> Even more reasons to shop with us.</span></h1>
+      <h1 className="text-3xl ml-4 my-2"><span className="font-bold"> The Apple Store difference.</span><span className="text-gray-700"> Even more reasons to shop with us.</span></h1>
       <Carousel_third cards={cards_third} />
     </div>
     <div className="container mx-auto py-8">
-      <h1 className="text-4xl"><span className="font-bold"> Accessories.</span><span className="text-gray-700">  Essentials that pair perfectly with your favourite devices.</span></h1>
+      <h1 className="text-3xl ml-4 my-2"><span className="font-bold"> Accessories.</span><span className="text-gray-700">  Essentials that pair perfectly with your favourite devices.</span></h1>
       <Carousel_fourth cards={cards_fourth} />
     </div>
    
 
     <div className="container mx-auto py-8">
-      <h1 className="text-4xl"><span className="font-bold"> Accessories.</span><span className="text-gray-700">  Essentials that pair perfectly with your favourite devices.</span></h1>
+      <h1 className="text-3xl ml-4 my-2"><span className="font-bold"> Accessories.</span><span className="text-gray-700">  Essentials that pair perfectly with your favourite devices.</span></h1>
       <Carousel_fifth cards={cards_fifth} />
     </div>
-      </div>
+
+
+    <div className="container mx-auto py-8">
+      <h1 className="text-3xl ml-4 my-2"><span className="font-bold"> The Apple experience.</span><span className="text-gray-700">Do even more with Apple products and services.</span></h1>
+      <Carousel_sixth cards={cards_sixth} />
+    </div>
+
+
+
+
+    <div className="container mx-auto py-8">
+      <h1 className="text-3xl ml-4 my-2"><span className="font-bold"> Special stores. </span><span className="text-gray-700">Exclusive savings for students and educators.</span></h1>
+      <Carousel_seventh cards={cards_seventh} />
+    </div>
       <p className="text-4xl font-bold ml-4 mt-4">Quick Links</p>
-        <div className="ml-4 mt-4">
+        <div className="ml-4 pt-6">
           <span className="mt-2 md:mt-0 block sm:inline px-4 py-2 mr-2 border border-solid border-gray-500 rounded-2xl hover:text-white hover:bg-gray-800 hover:cursor-pointer">Order Status</span>
           <span className="mt-2 md:mt-0 block sm:inline px-4 py-2 mr-2 border border-solid border-gray-500 rounded-2xl hover:text-white hover:bg-gray-800 hover:cursor-pointer">Shopping Help</span>
           <span className="mt-2 md:mt-0 block sm:inline px-4 py-2 mr-2 border border-solid border-gray-500 rounded-2xl hover:text-white hover:bg-gray-800 hover:cursor-pointer">Your Saves</span>
         </div>
+      </div>
     </div>
 
     

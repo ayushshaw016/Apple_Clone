@@ -26,12 +26,21 @@ export default function Navbar(){
   const [accesories, setaccessories] = useState(false);
   const [support, setsupport] = useState(false);
 
+// below both are for the hamburger
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
     return (
         <>
+        
            <nav className=" bg-[#464444] text-gray-400 hover:bg-black">
+           
     <ul className="flex flex-col lg:flex-row ml-36 justify-evenly">
     <Link href="/Home">
-        <li className="m-3 cursor-pointer mt-4 hover:underline" >
+        <li className="m-3 cursor-pointer mt-4 hover:scale-110" >
         <svg
           width="14"
           height="18"
@@ -47,6 +56,60 @@ export default function Navbar(){
         </svg>  
         </li>
         </Link>
+         <div className="lg:hidden flex justify-end -mt-10">
+              <button
+                onClick={toggleMenu}
+                className="text-white text-2xl focus:outline-none"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-10 w-10"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  {isOpen ? (
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M3.771 5.771a1 1 0 0 1 1.414 0l5.586 5.586 5.586-5.586a1 1 0 0 1 1.414 1.414l-6 6a1 1 0 0 1-1.414 0l-6-6a1 1 0 0 1 0-1.414z"
+                    />
+                  ) : (
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M4 6a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6zm0 5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2z"
+                    />
+                  )}
+                </svg>
+              </button>
+            </div>
+            <div className="lg:hidden">
+
+        <div
+             className={`absolute top-0 rounded-xl w-50% right-10 bg-black/10 bg-violet-300 backdrop-blur-sm py-4  opacity-80 ${
+          isOpen ? "block" : "hidden"
+        }`}
+            >
+              <ul className="flex p-4 flex-col items-center text-white">
+          <li className="m-3 cursor-pointer hover:text-white hover:underline" onMouseEnter={()=>{setstore(true)}} onMouseLeave={()=>{setstore(false)}}  >Store</li>
+        <li className="m-3 cursor-pointer hover:text-white hover:underline" onMouseEnter={()=>{setmac(true)}} onMouseLeave={()=>{setmac(false)}}  >Mac</li>
+        <li className="m-3 cursor-pointer hover:text-white hover:underline" onMouseEnter={()=>{setipad(true)}} onMouseLeave={()=>{setipad(false)}}  >iPad</li>
+        <li className="m-3 cursor-pointer hover:text-white hover:underline" onMouseEnter={()=>{setiphone(true)}} onMouseLeave={()=>{setiphone(false)}}  >iPhone</li>
+        <li className="m-3 cursor-pointer hover:text-white hover:underline" onMouseEnter={()=>{setwatch(true)}} onMouseLeave={()=>{setwatch(false)}}  >Watch</li>
+        <li className="m-3 cursor-pointer hover:text-white hover:underline" onMouseEnter={()=>{setairpods(true)}} onMouseLeave={()=>{setairpods(false)}}  >Airpods</li>
+        <li className="m-3 cursor-pointer hover:text-white hover:underline" onMouseEnter={()=>{settvandhome(true)}} onMouseLeave={()=>{settvandhome(false)}}  >TV & Home</li>
+        <li className="m-3 cursor-pointer hover:text-white hover:underline" onMouseEnter={()=>{setentertainment(true)}} onMouseLeave={()=>{setentertainment(false)}}  >Entertainment</li>
+        <li className="m-3 cursor-pointer hover:text-white hover:underline" onMouseEnter={()=>{setaccessories(true)}} onMouseLeave={()=>{setaccessories(false)}}  >Accessories</li>
+        <li className="m-3 cursor-pointer hover:text-white hover:underline" onMouseEnter={()=>setsupport(true)} onMouseLeave={()=>{setsupport(false)}}  >Support</li>
+        <li className="m-3 cursor-pointer">
+<Image src={cart} className="w-1/6 h-auto"/>
+        </li>
+              </ul>
+            </div>
+            </div>
+            <div className="lg:block hidden">
+              
+            <ul className="flex flex-col lg:flex-row ml-36 justify-evenly">
         <li className="m-3 cursor-pointer hover:text-white hover:underline" onMouseEnter={()=>{setstore(true)}} onMouseLeave={()=>{setstore(false)}}  data-aos="fade-dowm">Store</li>
         <li className="m-3 cursor-pointer hover:text-white hover:underline" onMouseEnter={()=>{setmac(true)}} onMouseLeave={()=>{setmac(false)}}>Mac</li>
         <li className="m-3 cursor-pointer hover:text-white hover:underline" onMouseEnter={()=>{setipad(true)}} onMouseLeave={()=>{setipad(false)}}>iPad</li>
@@ -60,6 +123,8 @@ export default function Navbar(){
         <li className="m-3 cursor-pointer">
 <Image src={cart} className="w-1/6 h-auto"/>
         </li>
+            </ul>
+        </div>
     </ul>
 </nav>
 
