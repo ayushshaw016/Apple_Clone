@@ -11,7 +11,7 @@ import Learnmore from "./Learnmore";
 // import Carousel from './Carousel'
 import img from "../public/Assets/images/airpods.png";
 import img1 from "../public/Assets/images/frame.png";
-import Carousel from "./Carousel";
+import Carousel from "../components/Carousel";
 export default function Home() {
   const images = [img, img1];
 
