@@ -36,9 +36,9 @@ export default function Navbar() {
   return (
     <>
       <nav className=" bg-[#464444] text-gray-400 hover:bg-black">
-        <ul className="flex flex-col lg:flex-row ml-36 justify-evenly">
+        <ul className="flex flex-col lg:flex-row lg:ml-6 md:justify-evenly justify-around">
           <Link href="/Home">
-            <li className="m-3 cursor-pointer mt-4 hover:scale-110">
+            <li className="m-3 cursor-pointer mt-4 hover:scale-110 ">
               <svg
                 width="14"
                 height="18"
@@ -196,9 +196,6 @@ export default function Navbar() {
                 >
                   Support
                 </li>
-                <li className="m-3 cursor-pointer">
-                  <Image src={cart} className="w-1/6 h-auto" />
-                </li>
               </ul>
             </div>
           </div>
@@ -312,9 +309,6 @@ export default function Navbar() {
                 }}
               >
                 Support
-              </li>
-              <li className="m-3 cursor-pointer">
-                <Image src={cart} className="w-1/6 h-auto" />
               </li>
             </ul>
           </div>

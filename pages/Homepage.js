@@ -473,58 +473,62 @@ export default function Homepage() {
           <div className=" ml-2 md:ml-6">
             <div className="flex flex-col md:flex-row pt-6 md:pt-32">
               <div className="md:w-2/3">
-                <p className="text-center text-gray-700 text-6xl items-end">
+                <p className="text-center text-gray-700  text-xl md:text-6xl items-end">
                   <span className="text-black font-bold">Store.</span> The best
                   way to buy the products you love.
                 </p>
               </div>
               <div className="md:w-1/3 ml-6 md:ml-12 mt-6 md:mt-0">
-                <div>
-                  <Image
-                    src={student}
-                    className="w-1/12 h-auto rounded-full inline-block"
-                  />
-                  <div className="mb-6 mr-6">
-                    <p className="font-bold">Need Shopping Help?</p>
-                    <p className="text-blue-400 hover:underline hover:cursor-pointer">
-                      Ask a Specialist
-                    </p>
+                <div className="flex flex-row md:flex-col justify-center">
+                  <div>
+                    <Image
+                      src={student}
+                      className="w-1/12 h-auto rounded-full inline-block"
+                    />
+                    <div className="mb-6 mr-6">
+                      <p className="font-bold">Need Shopping Help?</p>
+                      <p className="text-blue-400 hover:underline hover:cursor-pointer">
+                        Ask a Specialist
+                      </p>
+                    </div>
                   </div>
-                </div>
 
-                <div>
-                  <Image
-                    src={location}
-                    className="w-1/12 h-auto rounded-full inline-block"
-                  />
+                  <div>
+                    <Image
+                      src={location}
+                      className="w-1/12 h-auto rounded-full inline-block"
+                    />
 
-                  <div className="mb-6 mr-6">
-                    <p className="font-bold">Visit an Apple Store</p>
-                    <Link
-                      className="text-blue-400 hover:underline hover:cursor-pointer"
-                      href="https://www.google.com/maps/@21.0680074,82.7525294,5z?authuser=0&entry=ttu"
-                      target="_blank"
-                    >
-                      Find one near you &gt;
-                    </Link>
+                    <div className="mb-6 mr-6">
+                      <p className="font-bold">Visit an Apple Store</p>
+                      <Link
+                        className="text-blue-400 hover:underline hover:cursor-pointer"
+                        href="https://www.google.com/maps/@21.0680074,82.7525294,5z?authuser=0&entry=ttu"
+                        target="_blank"
+                      >
+                        Find one near you &gt;
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Diffrent item of the Apple */}
-            <div className="flex flex-col sm:flex-row justify-around  mt-6 md:mt-14">
+            <div className="flex flex-col sm:flex-row  sm:justify-around   mt-6 md:mt-14">
               {appleitems.map((items, index) => (
-                <div className="ml-4" key={index}>
-                  <Image src={items.img} className="h-auto" />
-                  <p className="text-lg text-center">{items.val}</p>
+                <div className="mx-auto md:ml-6 items-center" key={index}>
+                  <Image src={items.img} className="lg:h-auto h-32 w-32" />
+                  <p className="text-md md:text-lg  ml-3 text-center">
+                    {items.val}
+                  </p>
                 </div>
               ))}
             </div>
           </div>
 
           <div className="container mx-auto py-8">
-            <h1 className="text-3xl ml-4 my-2">
+            <h1 className="text-xl md:text-3xl ml-4 my-2">
               <span className="font-bold">The Latest.</span>
               <span className="text-gray-700">
                 Take a look at what’s new right now.
@@ -533,8 +537,8 @@ export default function Homepage() {
             <Carousel cards={cards} />
           </div>
 
-          <div className="container mx-auto py-8">
-            <h1 className="text-3xl ml-4 my-2">
+          <div className="container mx-auto md:py-8">
+            <h1 className="text-xl md:text-3xl ml-4 my-2">
               <span className="font-bold">Help is Here.</span>
               <span className="text-gray-700">
                 Whenever and however you need it.
@@ -543,7 +547,7 @@ export default function Homepage() {
             <Carousel_second cards={cards_second} />
           </div>
           <div className="container mx-auto py-8">
-            <h1 className="text-3xl ml-4 my-2">
+            <h1 className="text-xl md:text-3xl ml-4 my-2">
               <span className="font-bold"> The Apple Store difference.</span>
               <span className="text-gray-700">
                 {" "}
@@ -553,7 +557,7 @@ export default function Homepage() {
             <Carousel_third cards={cards_third} />
           </div>
           <div className="container mx-auto py-8">
-            <h1 className="text-3xl ml-4 my-2">
+            <h1 className="text-xl md:text-3xl ml-4 my-2">
               <span className="font-bold"> Accessories.</span>
               <span className="text-gray-700">
                 {" "}
@@ -564,7 +568,7 @@ export default function Homepage() {
           </div>
 
           <div className="container mx-auto py-8">
-            <h1 className="text-3xl ml-4 my-2">
+            <h1 className="text-xl md:text-3xl ml-4 my-2">
               <span className="font-bold"> Accessories.</span>
               <span className="text-gray-700">
                 {" "}
@@ -575,7 +579,7 @@ export default function Homepage() {
           </div>
 
           <div className="container mx-auto py-8">
-            <h1 className="text-3xl ml-4 my-2">
+            <h1 className="text-xl md:text-3xl ml-4 my-2">
               <span className="font-bold"> The Apple experience.</span>
               <span className="text-gray-700">
                 Do even more with Apple products and services.
@@ -585,7 +589,7 @@ export default function Homepage() {
           </div>
 
           <div className="container mx-auto py-8">
-            <h1 className="text-3xl ml-4 my-2">
+            <h1 className="text-xl md:text-3xl ml-4 my-2">
               <span className="font-bold"> Special stores. </span>
               <span className="text-gray-700">
                 Exclusive savings for students and educators.

@@ -43,13 +43,13 @@ const Carousel = ({ cards }) => {
 const Carousel_second = ({ cards }) => {
   return (
     <div
-      className="overflow-x-auto whitespace-nowrap ml-8"
+      className="overflow-x-auto whitespace-nowrap ml-8 "
       style={{ "-ms-overflow-style": "none", "scrollbar-width": "none" }}
     >
       {cards.map((card, index) => (
         <div
           key={index}
-          className="inline-block mr-4 w-full md:w-2/3 lg:w-2/5  py-4 ml-2 "
+          className="inline-block mr-4 w-full md:w-2/3 lg:w-2/5  md:py-4 ml-2 "
         >
           <div className={`bg-${card.background} shadow-lg p-4 rounded-2xl`}>
             {/* Render your card content here */}
@@ -88,11 +88,12 @@ const Carousel_third = ({ cards }) => {
             className={`bg-white shadow-lg p-4 rounded-2xl hover:scale-105 text-center w-full`}
           >
             {/* Render your card content here */}
-            <Image
-              src={card.img}
-              className="mt-4 mb-8 w-16 h-auto text-wrap "
-            />
-
+            <div className="flex justify-center md:justify-start">
+              <Image
+                src={card.img}
+                className="mt-4 mb-8 w-16 h-auto text-wrap "
+              />
+            </div>
             <p className={`text-xl mt-4 text-${card.titleclr} text-wrap`}>
               {card.title}
             </p>
